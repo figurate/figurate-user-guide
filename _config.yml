@@ -2,12 +2,13 @@
 title: Figurate
 email: figurate@micronode.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Figurate is a framework for building robust, scalable and modular Java applications. Figurate is based on the
+  principles of modularity, testability and adaptability, which provide the basis for a platform that is capable of
+  supporting the processes that underpin many of the modern design and implementation strategies.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://figurate.org" # the base hostname & protocol for your site
-#url: "http://localhost:63342/figurate.github.io/_site" # the base hostname & protocol for your site
+#baseurl: "/figurate.github.io/_site" # the subpath of your site, e.g. /blog/
+#url: "http://localhost:63342" # the base hostname & protocol for your site
 twitter_username: elbento
 github_username: figurate 
 

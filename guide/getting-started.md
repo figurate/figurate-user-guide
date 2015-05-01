@@ -1,3 +1,7 @@
+---
+layout: page
+title: Getting Started
+---
 # Getting Started
 
 The following instructions will help you to get a Figurate project up and running as quickly as possible.

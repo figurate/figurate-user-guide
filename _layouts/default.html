@@ -15,6 +15,10 @@
 
     {% include footer.html %}
 
+    {% if site.ga_id %}
+    {% include analytics.html %}
+    {% endif %}
+    <script src="{{ site.baseurl }}/js/script.js"></script>
   </body>
 
 </html>

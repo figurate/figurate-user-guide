@@ -14,3 +14,10 @@ github_username: figurate
 
 # Build settings
 markdown: kramdown
+
+##define this for disqus comment support
+disqus: figurate
+
+##set this to enable google analytics
+ga_id: UA-402774-9
+ga_domain: figurate.org

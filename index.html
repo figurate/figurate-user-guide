@@ -1,19 +1,23 @@
-<html>
-<head>
-	<title>Figurate</title>
-	<style type='text/css'><!--
-	    body {
-	        font-family: verdana, charcoal, helvetica, arial, sans-serif;
-	        font-size: small; color: #000; background-color: #FFF;
-	        margin: 2em;
-	--></style>
-</head>
-<body>
-	<img src="images/logo.png"/>
-	<div style="font-size:1.2em;margin:20px">Figurate is a framework for building, configuring and packaging OSGi applications.</div>
+---
+layout: default
+---
 
-<!--	
-	<p>Try the latest Webstart build <a href="http://figurate.org/webstart/launch.jnlp">here</a></p>
--->
-</body>
-</html>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

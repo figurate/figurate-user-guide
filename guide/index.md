@@ -6,5 +6,5 @@ The Figurate Guide provides documentation to assist with getting the most out of
 
 1. [Getting Started](getting-started.html)
 2. [Launcher](launcher.html)
-3. [Configuration](configuration.html)
+3. [Components](components.html)
 4. [Constellations](constellations.html)

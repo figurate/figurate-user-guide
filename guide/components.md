@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration
+title: Components
 ---
 Figurate provides configuration via the OSGi standard Configuration Admin support.
 

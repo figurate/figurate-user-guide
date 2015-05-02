@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a feed aggregator - Part One
+title: Building a feed aggregator - Part one
 ---
 Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn't require
 authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered

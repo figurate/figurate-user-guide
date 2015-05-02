@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a feed aggregator
+title: Building a feed aggregator - Part One
 ---
 Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn't require
 authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered
@@ -46,7 +46,7 @@ repositories {
 ## Adding Constellations
 
 To provide the features required for our aggregator, we add the relevant Constellations to our build dependencies. In
-this instance we require the RSS, HTTP, and Felix OSGi runtime Constellations. Note how we use the **bundle** dependency
+this instance we require the RSS, HTTP, and [Felix] OSGi runtime Constellations. Note how we use the **bundle** dependency
 scope, which will ensure the OSGi bundles in each Constellation are included in the final application distribution.
 
 {% highlight groovy %}
@@ -99,15 +99,43 @@ dependencies {
 ...
 
 launcherConfig {
-        configProps << [
-            'org.osgi.framework.system.packages.extra': 'sun.misc,org.gcontracts,org.gcontracts.annotations,org.gcontracts.generation',
-            'org.osgi.service.http.port'        : '[8080,8099)',
-            'org.apache.felix.http.jettyEnabled': 'true',
-            'org.apache.felix.http.whiteboardEnabled': 'true',
-            'org.apache.felix.http.debug'       : 'true',
-        ]
-    }
+    configProps << [
+        // use the next available port from 8080 onwards
+        'org.osgi.service.http.port'        : '[8080,8099)',
+        'org.apache.felix.http.jettyEnabled': 'true',
+        'org.apache.felix.http.whiteboardEnabled': 'true',
+        'org.apache.felix.http.debug'       : 'true',
+    ]
+}
 {% endhighlight %}
 
+To launch the application from the command line we use the **run** task implicitly included via the [Gradle Application
+Plugin]:
+
+`gradlew run`
+
+## The Result
+
+We can test our results in a browser, or with [curl] as follows:
+
+`curl http://localhost:8080/feed?url=http://rss.slashdot.org/Slashdot/slashdotMain`
+
+In a browser application we might prefer the output in JSON format, which we can do as follows:
+
+`curl http://localhost:8080/feed/json?url=http://rss.slashdot.org/Slashdot/slashdotMain`
+
+Similarly if we are embedding a feed in a HTML page we can request html output:
+
+`curl http://localhost:8080/feed/html?url=http://rss.slashdot.org/Slashdot/slashdotMain`
 
 
+
+## Conclusion
+
+So now we have a fully functional application that is capable of transforming and serving feeds in different formats.
+Technically we can't really call it an aggregator yet, as it doesn't cache feed history, however that functionality
+will be explored in the next instalment.
+
+[Felix]: http://felix.apache.org/
+[Gradle Application Plugin]: http://gradle.org/docs/current/userguide/application_plugin.html
+[curl]: http://curl.haxx.se/docs/manpage.html

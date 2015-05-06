@@ -30,8 +30,6 @@ buildscript {
     }
 }
 
-apply plugin: 'groovy'
-apply plugin: 'osgi'
 apply plugin: 'figurate'
 apply plugin: 'constellations'
 
@@ -51,8 +49,6 @@ scope, which will ensure the OSGi bundles in each Constellation are included in 
 
 {% highlight groovy %}
 ...
-apply plugin: 'groovy'
-apply plugin: 'osgi'
 apply plugin: 'figurate'
 apply plugin: 'constellations'
 
@@ -64,7 +60,12 @@ repositories {
 }
 
 dependencies {
-    bundle constellation$felix, constellation$rss, constellation$http
+    bundle configurations.constellation$felix, configurations.constellation$rss, configurations.constellation$http,
+            configurations.constellation$webconsole, configurations.constellation$logback,
+            'org.codehaus.groovy:groovy-all:2.4.3', 'org.apache.felix:org.apache.felix.configadmin:1.8.0',
+            configurations.constellation$rest, configurations.constellation$jackson
+            
+    runtime configurations.constellation$logback
 }
 {% endhighlight %}
 
@@ -93,7 +94,12 @@ repositories {
 }
 
 dependencies {
-    bundle constellation$felix, constellation$rss, constellation$http
+    bundle configurations.constellation$felix, configurations.constellation$rss, configurations.constellation$http,
+            configurations.constellation$webconsole, configurations.constellation$logback,
+            'org.codehaus.groovy:groovy-all:2.4.3', 'org.apache.felix:org.apache.felix.configadmin:1.8.0',
+            configurations.constellation$rest, configurations.constellation$jackson
+            
+    runtime configurations.constellation$logback
 }
 
 ...

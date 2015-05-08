@@ -183,6 +183,21 @@ So now we have a fully functional application that is capable of transforming an
 Technically we can't really call it an aggregator yet, as it doesn't cache feed history, however that functionality
 will be explored in the next instalment.
 
+## References
+
+You can find the [full source code] for this example on [GitHub]
+
+Other libraries used in this example are as follows:
+
+* [Newsagent]
+* [Amdatu]
+* [Felix]
+
 [Felix]: http://felix.apache.org/
 [Gradle Application Plugin]: http://gradle.org/docs/current/userguide/application_plugin.html
 [curl]: http://curl.haxx.se/docs/manpage.html
+[full source code]: https://github.com/figurate/figurate-examples/tree/master/feed-aggregator
+[GitHub]: https://github.com/figurate
+[Newsagent]: https://github.com/benfortuna/newsagent
+[Amdatu]: http://www.amdatu.org/components/web.html
+[Felix]: http://felix.apache.org/

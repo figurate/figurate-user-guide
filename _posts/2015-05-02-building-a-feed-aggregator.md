@@ -60,11 +60,15 @@ repositories {
 }
 
 dependencies {
-    bundle configurations.constellation$felix, configurations.constellation$rss, configurations.constellation$http,
-            configurations.constellation$webconsole, configurations.constellation$logback,
-            'org.codehaus.groovy:groovy-all:2.4.3', 'org.apache.felix:org.apache.felix.configadmin:1.8.0',
-            configurations.constellation$rest, configurations.constellation$jackson
-            
+    bundle configurations.constellation$felix, // OSGi runtime
+            configurations.constellation$webconsole, // OSGi dashboard application
+            configurations.constellation$http, // embedded Jetty HTTP server
+            configurations.constellation$rest, // REST support from Amdatu
+            configurations.constellation$jackson, // JSON databinding support for the REST framework
+            configurations.constellation$logback, // logging framework
+            'org.codehaus.groovy:groovy-all:2.4.3', // Groovy runtime
+            configurations.constellation$rss // RSS parsing and REST-ful endpoints from Newsagent library
+
     runtime configurations.constellation$logback
 }
 {% endhighlight %}
@@ -94,11 +98,15 @@ repositories {
 }
 
 dependencies {
-    bundle configurations.constellation$felix, configurations.constellation$rss, configurations.constellation$http,
-            configurations.constellation$webconsole, configurations.constellation$logback,
-            'org.codehaus.groovy:groovy-all:2.4.3', 'org.apache.felix:org.apache.felix.configadmin:1.8.0',
-            configurations.constellation$rest, configurations.constellation$jackson
-            
+    bundle configurations.constellation$felix, // OSGi runtime
+            configurations.constellation$webconsole, // OSGi dashboard application
+            configurations.constellation$http, // embedded Jetty HTTP server
+            configurations.constellation$rest, // REST support from Amdatu
+            configurations.constellation$jackson, // JSON databinding support for the REST framework
+            configurations.constellation$logback, // logging framework
+            'org.codehaus.groovy:groovy-all:2.4.3', // Groovy runtime
+            configurations.constellation$rss // RSS parsing and REST-ful endpoints from Newsagent library
+
     runtime configurations.constellation$logback
 }
 

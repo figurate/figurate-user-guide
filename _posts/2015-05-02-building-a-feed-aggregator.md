@@ -149,10 +149,9 @@ Output:
       "published": "2015-05-02T00:00:00+0000"
     }
   ],
-  "enclosures": [],
   "title": "Figurate",
   "description": "Figurate is a framework for building robust, scalable and modular Java applications. Figurate is based on the principles of modularity, testability and adaptability, which provide the basis for a platform that is capable of supporting the processes that underpin many of the modern design and implementation strategies.\n",
-  "url": "http://www.figurate.org/feed.xml",
+  "url": "http://figurate.org/feed.xml",
   "links": [
     "http://figurate.org/"
   ],
@@ -175,11 +174,10 @@ entries:
   text: []
   link: http://figurate.org/2015/05/02/building-a-feed-aggregator.html
   published: 2015-05-02T00:00:00Z
-enclosures: []
 title: Figurate
 description: |
   Figurate is a framework for building robust, scalable and modular Java applications. Figurate is based on the principles of modularity, testability and adaptability, which provide the basis for a platform that is capable of supporting the processes that underpin many of the modern design and implementation strategies.
-url: http://www.figurate.org/feed.xml
+url: http://figurate.org/feed.xml
 links: ['http://figurate.org/']
 tags: []
 {% endhighlight %}

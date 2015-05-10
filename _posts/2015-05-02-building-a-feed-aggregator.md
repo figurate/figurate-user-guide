@@ -143,7 +143,7 @@ Output:
     {
       "uri": "http://figurate.org/2015/05/02/building-a-feed-aggregator.html",
       "title": "Building a feed aggregator - Part one",
-      "description": "<p>Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn’t require authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered relatively easily.</p>",
+      "description": "Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn’t require authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered relatively easily.",
       "text": [],
       "link": "http://figurate.org/2015/05/02/building-a-feed-aggregator.html",
       "published": "2015-05-02T00:00:00+0000"
@@ -151,7 +151,7 @@ Output:
   ],
   "title": "Figurate",
   "description": "Figurate is a framework for building robust, scalable and modular Java applications. Figurate is based on the principles of modularity, testability and adaptability, which provide the basis for a platform that is capable of supporting the processes that underpin many of the modern design and implementation strategies.\n",
-  "url": "http://figurate.org/feed.xml",
+  "url": "http://www.figurate.org/feed.xml",
   "links": [
     "http://figurate.org/"
   ],
@@ -170,14 +170,14 @@ Output:
 entries:
 - uri: http://figurate.org/2015/05/02/building-a-feed-aggregator.html
   title: Building a feed aggregator - Part one
-  description: <p>Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn’t require authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered relatively easily.</p>
+  description: Feed aggregation is perhaps one of the simplest services you can provide on the Internet. It (usually) doesn’t require authentication, datasets are readily available, and the data itself is simple enough that it can be stored and rendered relatively easily.
   text: []
   link: http://figurate.org/2015/05/02/building-a-feed-aggregator.html
   published: 2015-05-02T00:00:00Z
 title: Figurate
 description: |
   Figurate is a framework for building robust, scalable and modular Java applications. Figurate is based on the principles of modularity, testability and adaptability, which provide the basis for a platform that is capable of supporting the processes that underpin many of the modern design and implementation strategies.
-url: http://figurate.org/feed.xml
+url: http://www.figurate.org/feed.xml
 links: ['http://figurate.org/']
 tags: []
 {% endhighlight %}

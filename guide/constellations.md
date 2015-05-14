@@ -16,7 +16,11 @@ The available Figurate constellations are as follows:
 ## Gradle Plugin
 
 Figurate provides a gradle plugin to make it simple to add constellations to your application, without needing to
-worry about compatibility issues between bundles across different constellations.
+worry about compatibility issues between bundles across different constellations. You apply the constellation plugin as
+follows:
+
+`apply plugin: 'constellations'`
+
 
 # Configurations
 

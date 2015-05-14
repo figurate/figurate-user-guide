@@ -3,6 +3,14 @@ layout: page
 title: Constellations
 ---
 A Figurate Constellation is a collection of bundles that are designed to work together to provide a specific feature.
+The available Figurate constellations are as follows:
+
+|Constellation   | Figurate Versions | Description
+|-
+|felix           | All               | Felix OSGi runtime
+|http            | All               | HTTP server/Servlet container (Jetty)
+|scr             | All               | Service Component Runtime
+|webconsole      | All               | Felix OSGi dashboard
 
 # Gradle Plugin
 

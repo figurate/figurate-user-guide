@@ -25,7 +25,7 @@ substitution, which is why we need to escape the dollar.
 
 The output should look something like this:
 
-{% highlight %}
+{% highlight bash %}
 Bens-MacBook-Pro:feed-aggregator fortuna$ gradle dependencies --configuration constellation\$felix
 :feed-aggregator:dependencies
 

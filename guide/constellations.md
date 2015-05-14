@@ -5,19 +5,20 @@ title: Constellations
 A Figurate Constellation is a collection of bundles that are designed to work together to provide a specific feature.
 The available Figurate constellations are as follows:
 
-|Constellation   | Figurate Versions | Description
+| Constellation   | Figurate Versions | Description
 |-
-|felix           | All               | Felix OSGi runtime
-|http            | All               | HTTP server/Servlet container (Jetty)
-|scr             | All               | Service Component Runtime
-|webconsole      | All               | Felix OSGi dashboard
+| felix           | All               | Felix OSGi runtime
+| http            | All               | HTTP server/Servlet container (Jetty)
+| scr             | All               | Service Component Runtime
+| webconsole      | All               | Felix OSGi dashboard
 
-# Gradle Plugin
+
+## Gradle Plugin
 
 Figurate provides a gradle plugin to make it simple to add constellations to your application, without needing to
 worry about compatibility issues between bundles across different constellations.
 
-## Configurations
+# Configurations
 
 The Gradle Constellation Plugin uses Gradle configurations to define constellations. As such, to add a constellation
 to your application you just include the configuration in Figurate's custom *bundle* configuration, like so:

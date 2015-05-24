@@ -41,6 +41,28 @@ repositories {
 }
 {% endhighlight %}
 
+## OSGi Framework Selection
+
+Figurate supports any OSGi framework that implements the OSGi [FrameworkFactory]. Just add the appropriate libraries
+as runtime dependencies:
+
+{% highlight groovy %}
+...
+apply plugin: 'figurate'
+apply plugin: 'constellations'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    runtime 'org.apache.felix:org.apache.felix.framework:5.0.0'
+}
+{% endhighlight %}
+
 ## Adding Constellations
 
 To provide the features required for our aggregator, we add the relevant Constellations to our build dependencies. In
@@ -198,6 +220,7 @@ Other libraries used in this example are as follows:
 * [Amdatu]
 * [Felix]
 
+[FrameworkFactory]: https://osgi.org/javadoc/r4v42/org/osgi/framework/launch/FrameworkFactory.html
 [Felix]: http://felix.apache.org/
 [Gradle Application Plugin]: http://gradle.org/docs/current/userguide/application_plugin.html
 [curl]: http://curl.haxx.se/docs/manpage.html

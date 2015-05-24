@@ -25,13 +25,11 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'org.figurate:gradle-figurate-plugin:master-SNAPSHOT',
-                'org.figurate:gradle-constellations-plugin:master-SNAPSHOT'
+        classpath 'org.figurate:gradle-figurate-plugin:master-SNAPSHOT'
     }
 }
 
 apply plugin: 'figurate'
-apply plugin: 'constellations'
 
 repositories {
     mavenCentral()
@@ -49,7 +47,6 @@ as runtime dependencies:
 {% highlight groovy %}
 ...
 apply plugin: 'figurate'
-apply plugin: 'constellations'
 
 repositories {
     mavenCentral()
@@ -65,12 +62,24 @@ dependencies {
 
 ## Adding Constellations
 
-To provide the features required for our aggregator, we add the relevant Constellations to our build dependencies. In
+To provide the features required for our aggregator, we add the relevant [Constellations] to our build dependencies.
+The constellation plugin provides additional configurations that contain pre-packaged selections of bundles. In
 this instance we require the RSS, HTTP, and [Felix] OSGi runtime Constellations. Note how we use the **bundle** dependency
 scope, which will ensure the OSGi bundles in each Constellation are included in the final application distribution.
 
 {% highlight groovy %}
-...
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+    }
+    dependencies {
+        classpath 'org.figurate:gradle-figurate-plugin:master-SNAPSHOT',
+                   'org.figurate:gradle-constellations-plugin:master-SNAPSHOT'
+    }
+}
 apply plugin: 'figurate'
 apply plugin: 'constellations'
 
@@ -221,6 +230,7 @@ Other libraries used in this example are as follows:
 * [Felix]
 
 [FrameworkFactory]: https://osgi.org/javadoc/r4v42/org/osgi/framework/launch/FrameworkFactory.html
+[Constellations]: http://figurate.org/guide/constellations.html
 [Felix]: http://felix.apache.org/
 [Gradle Application Plugin]: http://gradle.org/docs/current/userguide/application_plugin.html
 [curl]: http://curl.haxx.se/docs/manpage.html

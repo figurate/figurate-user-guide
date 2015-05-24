@@ -69,7 +69,7 @@ dependencies {
             'org.codehaus.groovy:groovy-all:2.4.3', // Groovy runtime
             configurations.constellation$rss // RSS parsing and REST-ful endpoints from Newsagent library
 
-    runtime configurations.constellation$logback
+    runtime 'org.apache.felix:org.apache.felix.framework:5.0.0', configurations.constellation$logback
 }
 {% endhighlight %}
 
@@ -107,7 +107,7 @@ dependencies {
             'org.codehaus.groovy:groovy-all:2.4.3', // Groovy runtime
             configurations.constellation$rss // RSS parsing and REST-ful endpoints from Newsagent library
 
-    runtime configurations.constellation$logback
+    runtime 'org.apache.felix:org.apache.felix.framework:5.0.0', configurations.constellation$logback
 }
 
 ...

@@ -15,7 +15,7 @@ The following instructions will help you to get a Figurate project up and runnin
 
 ### Gradle Plugin
 
-The simplest way to use Figurate is to apply the Figurate plugin in a Gradle build script. Some [example](figurate-examples) applications are
+The simplest way to use Figurate is to apply the Figurate plugin in a Gradle build script. Some [example|figurate-examples] applications are
 provided that demonstrate usage of this plugin.
 
 ## <a name="launcher"></a>Launcher
@@ -95,5 +95,5 @@ BUILD SUCCESSFUL
 Total time: 6.027 secs
 {% endhighlight %}
 
-[figurate-examples](https://github.com/figurate/figurate-examples)
+[figurate-examples]: https://github.com/figurate/figurate-examples
 

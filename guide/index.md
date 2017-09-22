@@ -75,7 +75,7 @@ substitution, which is why we need to escape the dollar.
 The output should look something like this:
 
 {% highlight bash %}
-$ gradle dependencies --configuration constellation\$felix
+\$ gradle dependencies --configuration constellation\$felix
 :feed-aggregator:dependencies
 
 ------------------------------------------------------------

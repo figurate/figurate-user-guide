@@ -1,7 +1,5 @@
----
-layout: page
-title: Guide
----
+# Getting Started
+
 The Figurate Guide provides documentation to assist with getting the most out of the Figurate framework.
 
 1. [Getting Started](#getting-started)

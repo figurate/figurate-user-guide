@@ -1,0 +1,7 @@
+site_name: Figurate
+theme:
+  name: material
+  favicon: images/favicon.png
+  logo: images/logo.png
+repo_url: https://github.com/micronode/whistlepost
+repo_name: micronode/whistlepost

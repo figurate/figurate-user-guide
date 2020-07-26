@@ -1,7 +1,31 @@
 site_name: Figurate
+site_url: https://www.figurate.org
 theme:
   name: material
   favicon: images/favicon.png
   logo: images/logo.png
-repo_url: https://github.com/micronode/whistlepost
-repo_name: micronode/whistlepost
+  features:
+    - tabs
+#repo_url: https://github.com/micronode/whistlepost
+#repo_name: micronode/whistlepost
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/benfortuna
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/benfortuna
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/micronode
+nav:
+  - Home:
+    - Introduction: index.md
+  - Terraform:
+      - Overview: terraform/index.md
+      - AWS: terraform/aws.md
+      - Digital Ocean: terraform/digitalocean.md
+  - OSGi:
+      - Overview: osgi/index.md
+      - Getting Started: osgi/getting-started.md
+      - Release Notes: osgi/release-notes.md
+  - Gradle:
+      - Overview: gradle/index.md

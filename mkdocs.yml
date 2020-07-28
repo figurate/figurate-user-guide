@@ -6,8 +6,8 @@ theme:
   logo: images/logo.png
   features:
     - tabs
-#repo_url: https://github.com/micronode/whistlepost
-#repo_name: micronode/whistlepost
+repo_url: https://github.com/figurate/figurate-docs
+repo_name: figurate/figurate-docs
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -19,13 +19,17 @@ extra:
 nav:
   - Home:
     - Introduction: index.md
-  - Terraform:
-      - Overview: terraform/index.md
-      - AWS: terraform/aws.md
-      - Digital Ocean: terraform/digitalocean.md
-  - OSGi:
-      - Overview: osgi/index.md
-      - Getting Started: osgi/getting-started.md
-      - Release Notes: osgi/release-notes.md
-  - Gradle:
-      - Overview: gradle/index.md
+  - Infrastructure as Code:
+    - Overview: iac/index.md
+    - Terraform:
+        - Overview: iac/terraform/index.md
+        - AWS: iac/terraform/aws.md
+        - Digital Ocean: iac/terraform/digitalocean.md
+  - Modular Architecture:
+    - OSGi:
+        - Overview: modularity/osgi/index.md
+        - Getting Started: modularity/osgi/getting-started.md
+        - Release Notes: modularity/osgi/release-notes.md
+  - Orchestration:
+    - Gradle:
+        - Overview: orchestration/gradle/index.md

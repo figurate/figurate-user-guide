@@ -22,12 +22,13 @@ nav:
   - Infrastructure as Code:
     - Overview: iac/index.md
     - Terraform:
-        - Overview: iac/terraform/index.md
+        - Introduction: iac/terraform/index.md
         - AWS: iac/terraform/aws.md
         - Digital Ocean: iac/terraform/digitalocean.md
   - Modular Architecture:
+    - Overview: modularity/index.md
     - OSGi:
-        - Overview: modularity/osgi/index.md
+        - Introduction: modularity/osgi/index.md
         - Getting Started: modularity/osgi/getting-started.md
         - Release Notes: modularity/osgi/release-notes.md
   - Orchestration:

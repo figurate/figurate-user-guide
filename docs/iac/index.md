@@ -19,6 +19,17 @@ They allow us to abstract the details specific to
 a platform or environment such that we only need to configure the instance-specific
 details.
 
+### Portability
+
+By using higher-level constructs like blueprints to compose architectures we also inherently
+improve the portability of an architecture, both within and across different platforms.
+
+Blueprint-based architectures are more easily replicated in different environments as they
+are easier to duplicate. (*)
+
+(*) Some blueprints may not be replicable across all platforms, but generally Cloud concepts
+are transferable across multiple platforms.  
+
 ### Defaults
 
 We can use blueprints to provide sensible defaults as applicable to platforms and environments

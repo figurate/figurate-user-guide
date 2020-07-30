@@ -31,6 +31,11 @@ nav:
         - Introduction: modularity/osgi/index.md
         - Getting Started: modularity/osgi/getting-started.md
         - Release Notes: modularity/osgi/release-notes.md
+    - Docker:
+        - Introduction: modularity/docker/index.md
+    - Lambda:
+        - Introduction: modularity/lambda/index.md
   - Orchestration:
-    - Gradle:
-        - Overview: orchestration/gradle/index.md
+      - Overview: orchestration/index.md
+      - Gradle:
+          - Overview: orchestration/gradle/index.md

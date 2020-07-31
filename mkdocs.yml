@@ -8,6 +8,9 @@ theme:
     - tabs
 repo_url: https://github.com/figurate/figurate-docs
 repo_name: figurate/figurate-docs
+google_analytics:
+  - UA-402774-9
+  - auto
 extra:
   social:
     - icon: fontawesome/brands/github

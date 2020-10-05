@@ -22,3 +22,12 @@ cornerstone in a broader strategy.
 
 * Infrastructure state is not managed automatically (Terraform Cloud does improve this)
 * Some values may be stored in state insecurely (e.g. secrets, credentials, etc.)
+
+## Module Guidelines
+
+Figurate modules are developed with the following principles for maximum portability and reuse.
+
+* Use consistent variable names where possible (use same convention as resources)
+* Make no assumptions about provider and backend configuration (these are configured externally)
+* Avoid nested modules (minimise externally managed dependencies)
+* Make no assumptions about execution environment (avoid local-exec)

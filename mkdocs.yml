@@ -26,6 +26,7 @@ nav:
     - Overview: iac/index.md
     - Terraform:
         - Introduction: iac/terraform/index.md
+        - Modules: iac/terraform/modules.md
         - AWS: iac/terraform/aws.md
         - Digital Ocean: iac/terraform/digitalocean.md
   - Modular Architecture:

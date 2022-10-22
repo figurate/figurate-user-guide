@@ -17,15 +17,19 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/micronode
 nav:
-  - Home:
+  - Overview:
     - Introduction: index.md
-  - Terraform:
-      - Overview: terraform/index.md
-      - AWS: terraform/aws.md
-      - Digital Ocean: terraform/digitalocean.md
-  - OSGi:
-      - Overview: osgi/index.md
-      - Getting Started: osgi/getting-started.md
-      - Release Notes: osgi/release-notes.md
-  - Gradle:
-      - Overview: gradle/index.md
+    - Tenant Management: tenancy.md
+    - Identity Management: identity.md
+    - Threat Identification: threats.md
+  - Tools:
+    - Terraform:
+        - Overview: terraform/index.md
+        - AWS: terraform/aws.md
+        - Digital Ocean: terraform/digitalocean.md
+    - OSGi:
+        - Overview: osgi/index.md
+        - Getting Started: osgi/getting-started.md
+        - Release Notes: osgi/release-notes.md
+    - Gradle:
+        - Overview: gradle/index.md

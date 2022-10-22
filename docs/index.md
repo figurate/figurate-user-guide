@@ -10,7 +10,7 @@ is also just as valid when considering the wider DevOps ecosystem. Whether you l
 Platform Engineering, Golden Path or something else, these are all just implementations of
 separation of concerns and loose coupling.
 
-
+<!--
 <style>
     .heatMap {
         text-align: center;
@@ -35,7 +35,7 @@ separation of concerns and loose coupling.
 </style>
 
 <div class="heatMap">
-
+-->
 | Security                          | Reliability                        | Efficiency                            | Operational Excellence          | Cost Optimization           | Sustainability        |
 |-----------------------------------|------------------------------------|---------------------------------------|---------------------------------|-----------------------------|-----------------------|
 | [Tenant management](TENANCY.md)   | [Identity Management](identity.md) | [Permissions](PERMISSIONS.md)         | [Certificates](CERTIFICATES.md) | [Encryption](ENCRYPTION.md) | [Secrets](SECRETS.md) |
@@ -44,9 +44,9 @@ separation of concerns and loose coupling.
 | [Monitoring](MONITORING.md)       | [Networking](NETWORKING.md)        | [Serverless](SERVERLESS.md)           | -                               | -                           | -                     |
 | [Alerting](ALERTING.md)           | [Tracing](TRACING.md)              | -                                     | -                               | -                           | -                     |
 | [Observability](OBSERVABILITY.md) | -                                  | -                                     | -                               | -                           | -                     |
-
+<!--
 </div>
-
+-->
 Beginning with the top left of the Figurate table, and working across and down, we can
 address each of the concerns specific to an application, platform or organisation.
 Where the application(s) are hosted is an obvious primary concern, so we consider tenancy 

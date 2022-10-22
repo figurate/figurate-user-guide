@@ -20,8 +20,11 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/micronode
 nav:
-  - Home:
+  - Overview:
     - Introduction: index.md
+    - Tenant Management: tenancy.md
+    - Identity Management: identity.md
+    - Threat Identification: threats.md
   - Infrastructure as Code:
     - Overview: iac/index.md
     - Terraform:
